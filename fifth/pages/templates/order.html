@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block link %}
+<li class="nav-item"><a href="{% url 'home' %}" class="nav-link" aria-current="page">Home</a></li>
+<li class="nav-item"><a href="{% url 'order' %}" class="nav-link active">Order A Call</a></li>
+<li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About</a></li>
+<li class="nav-item"><a href="{% url 'login' %}" class="nav-link">Log in</a></li>
+<li class="nav-item"><a href="{% url 'register' %}" class="nav-link">Sign Up</a></li>
+{% endblock %}
+
+{% block content %}
+
+<form method="POST">
+    {% csrf_token %}
+    <div class="container">
+    	<div class="form-group">
+	    <label for="exampleFormControlInput1">Name:</label>
+	    {{ form.name }}
+	  </div>
+	    <div class="form-group">
+	    <label for="exampleFormControlInput1">Email:</label>
+	    {{ form.email }}
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleFormControlTextarea1">Problem:</label>
+	    {{ form.message }}
+	  </div>
+	  <div class="form-group">
+	  	<label for="exampleFormControlInput1">Select a date for the call:</label>
+        <div class='input-group date' id='datetimepicker1'>
+            {{ form.date }}
+        </div>
+      </div>
+      <div class="form-group">
+	  	<label for="exampleFormControlInput1">Choose a time to call:</label>
+        <div class='input-group date' id='datetimepicker1'>
+            {{ form.time }}
+        </div>
+      </div>
+	  
+	  
+	  <button style="margin-top: 50px;" type="submit" class="btn btn-primary btn-lg">Send</button>
+</div>
+
+</form>
+
+{% endblock %}
