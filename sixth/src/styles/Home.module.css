@@ -1,0 +1,122 @@
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/*----------DISCOVER-----------*/
+
+.discover_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discover_text_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.discover_text_and_buttons_wrapper {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.discover_title {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 83px;
+    line-height: 101%;
+    text-transform: capitalize; 
+}
+
+.discover_subtitle {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px; 
+}
+
+.discover_buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 22px 56px;
+    background: #9090DC;
+    border-radius: 83px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.button:hover {
+    transition: 0.3s;
+    background: #7e7edd;
+}
+
+.discover_img {
+    width: 560px;
+    height: 600px;
+}
+
+/*--------FEAUTURED-----------*/
+
+.featured_wrapper {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.featured_title {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+}
+
+.featured_imgs {
+    width: 100%;
+    height: 100px;
+    background: rgba(99, 88, 189, 0.19);
+    opacity: 0.73;
+    border-radius: 11px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.featured_img1 {
+    width: 202px;
+    height: 74px;
+}
+
+.featured_img2 {
+    width: 180px;
+    height: 28px;
+}
+
+.featured_img3 {
+    width: 73px;
+    height: 40px;
+}
+
+.featured_img4 {
+    width: 123px;
+    height: 31px;
+}
