@@ -60,6 +60,7 @@
     letter-spacing: 0.1em;
     color: #ffffff;
     transition: 0.3s;
+    
 }
 
 .button:hover {
@@ -93,8 +94,7 @@
 .featured_imgs {
     width: 100%;
     height: 100px;
-    background: rgba(99, 88, 189, 0.19);
-    opacity: 0.73;
+    background: #9090dc;
     border-radius: 11px;
     display: flex;
     justify-content: space-around;
@@ -120,3 +120,208 @@
     width: 123px;
     height: 31px;
 }
+
+/*---------ANALYTICS--------*/
+
+.analytics_wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.analytics_img {
+    margin-top: 80px;
+    width: 470px;
+    height: 470px;
+}
+
+.analytics_text_and_button {
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.analytics_text {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.main_title {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 57px;
+    line-height: 101%;
+    text-transform: capitalize;
+}
+
+.subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+/*-----GET OUR APP------*/
+
+.getourapp_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.getourapp_img {
+    margin-top: 80px;
+    width: 500px;
+    height: 500px;
+}
+
+.getourapp_text_and_button {
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.getourapp_text {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+/*-----TESTIMONIALS-----*/
+
+.testimonials_wrapper {
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.testimonials_text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.testimonials_cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials_card {
+    width: 345px;
+    height: 260px;
+    background: #0E0E48;
+    border-radius: 20px;
+}
+
+.testimonials_img {
+    position: relative;
+    width: 123px;
+    height: 123px;
+    left: 111px;
+    top: -61.5px;
+}
+
+.testimonials_card_name {
+    margin-top: -50px;
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.testimonials_card_text {
+    margin-top: 15px;
+    font-family: 'Outfit';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 115%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+/*------GET STARTED------*/
+
+.getstarted_wrapper {
+    margin-top: 66px;
+    width: 100%;
+    height: 386px;
+    background: linear-gradient(277.69deg, #AAD9D9 -9.79%, #9090DC 84.42%, #7D7DDC 84.42%);
+    border-radius: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.getstarted_text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.getstarted_main_title {
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #0E0E48;
+}
+
+.getstarted_title {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 57px;
+    line-height: 101%;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+.getstarted_button {
+    display: inline-block;
+    padding: 22px 56px;
+    background: #0E0E48;
+    border-radius: 83px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    transition: 0.3s;
+    
+}
+
+.getstarted_button:hover {
+    transition: 0.3s;
+    background: #171786;
+}
+
+
+

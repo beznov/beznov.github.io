@@ -1,0 +1,79 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.label {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.frm {
+    position: relative;
+}
+
+.input_email {
+    width: 193px;
+    height: 56px;
+    background: #11124B;
+    border-radius: 70px;
+    border: none;
+    outline: none;
+    font-family: 'Outfit';
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 0px 140px 0px 27px;
+}
+
+.button {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background: #9090DC;
+    border-radius: 70px;
+    border: none;
+    font-family: 'Outfit';
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 12px 33px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #7e7edd;
+    transition: 0.3s;
+}
+
+.correct {
+    width: 191px;
+    height: 54px;
+    background: #11124B;
+    border-radius: 70px;
+    border: 1px solid #00ff15;
+    outline: none;
+    font-family: 'Outfit';
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 0px 140px 0px 27px;
+}
+
+.incorrect {
+    width: 191px;
+    height: 54px;
+    background: #11124B;
+    border-radius: 70px;
+    border: 1px solid #ff0000;
+    outline: none;
+    font-family: 'Outfit';
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 0px 140px 0px 27px;
+}
