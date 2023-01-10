@@ -1,0 +1,56 @@
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons_label {
+    font-family: 'Outfit';
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 56px;
+    background: #9090DC;
+    border: none;
+    border-radius: 83px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    transition: 0.3s;
+    background: #7e7edd;
+}
+
+.selected_button {
+    display: inline-block;
+    padding: 12px 56px;
+    background: #0b0b11;
+    border: none;
+    border-radius: 83px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    transition: 0.3s;
+    cursor: pointer;
+}
