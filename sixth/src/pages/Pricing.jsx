@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import classes from "../styles/Pricing.module.css";
 import List from "../components/List/List";
 import bored from "../img/bored.webp";
@@ -22,7 +22,18 @@ function Pricing() {
     const [sortByNameButton, setSortByNameButton] = useState(classes.button)
     const [sortByPriceButton, setSortByPriceButton] = useState(classes.button)
     const [sortByOwnersButton, setSortByOwnersButton] = useState(classes.button)
+    const [search, setSearch] = useState('');
 
+    function searchControl(e) {
+        setSearch(e.target.value);
+    }
+
+    const filteredItems = useMemo(() => {
+        let filteredItems = [...items];
+        filteredItems = filteredItems.filter(item =>
+        item.name.toLowerCase().includes(search.toLowerCase()))
+        return filteredItems;
+    }, [search, items])
 
     const sortByName = () => {
         const sortedItems = [...items].sort((a, b) => a.name.localeCompare(b.name));
@@ -50,15 +61,17 @@ function Pricing() {
 
     return (
         <div className={classes.container}>
+            <input type="text" onChange={searchControl}
+            className={classes.search_input} placeholder="Search..." />
             <div className={classes.buttons}>
                 <div className={classes.buttons_label}>Sort by:</div>
                 <button className={sortByNameButton} onClick={sortByName}>Name</button>
                 <button className={sortByPriceButton} onClick={sortByPrice}>Price</button>
                 <button className={sortByOwnersButton} onClick={sortByOwners}>Owners</button>
             </div>
-            {items.map(item =>
+            { filteredItems.length ? filteredItems.map(item =>
                 <List list={item} key={item.id} />
-            )}
+            ) : <div className={classes.no_items}>NFTs Not Found </div> }
         </div>
     )
 }

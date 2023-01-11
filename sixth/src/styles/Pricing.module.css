@@ -5,6 +5,7 @@
 }
 
 .buttons {
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,4 +54,26 @@
     color: #ffffff;
     transition: 0.3s;
     cursor: pointer;
+}
+
+.search_input {
+    width: 100%;
+    height: 50px;
+    font-family: 'Outfit';
+    font-size: 20px;
+    font-weight: 400;
+    background: #11124B;
+    border: 5px solid #9090DC;
+    border-radius: 20px;
+    padding-left: 10px;
+    color: #ffffff;
+    outline: none;
+}
+
+.no_items {
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Outfit';
+    font-size: 50px;
+    font-weight: 600;
 }
