@@ -642,7 +642,13 @@ color: #000000;
 opacity: 0.5;
 }
 
+
+
 /*-------------------*/
+
+.footer-mobile-box {
+    display: none;
+}
 
 @media (max-width: 1301px) {
     [class*="__container"] {
