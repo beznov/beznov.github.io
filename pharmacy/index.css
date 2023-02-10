@@ -97,3 +97,74 @@ ul, li{
 .pill_subtitle {
     font-weight: 300;
 }
+
+.pill_img {
+    max-width: 600px;
+    border: 5px solid green;
+    border-radius: 20px;
+    align-self: center;
+}
+
+.comments {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.comments_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.comment {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid green;
+    border-radius: 20px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.user {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.name {
+    font-size: 1.5rem;
+}
+
+.comment_text {
+    padding-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.avatar {
+    border: 3px solid green;
+    border-radius: 50%;
+}
+
+.comments_button {
+    background: green;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.comments_button:hover {
+    background: rgb(1, 169, 1);
+    cursor: pointer;
+}
