@@ -106,5 +106,38 @@ $('.comments_button').click(function() {
         isShowing = false;
         counter = 0;
         $(this).text('Show comments');
-        }
+    }
 })
+
+$('#name_input').keyup(function() {
+    $('#user_name').text('Hi, my name is ' + $(this).val() + '.');
+    if($(this).val().length >= 2) {
+        $('#name_button').removeAttr('disabled');
+    } else {
+        $('#name_button').attr('disabled', 'true');
+    }
+})
+
+var process = false;
+var m_id = 0;
+var m = [
+    '',
+    'VitalBoost is a comprehensive multi-vitamin supplement designed to support overall health and wellness. Each serving of VitalBoost contains a balanced blend of essential vitamins and minerals, including Vitamin A, C, D, and E, as well as B-Complex vitamins, calcium, and iron.',
+    'With its convenient daily serving size and easy-to-swallow tablets, VitalBoost is the perfect addition to your daily routine for maintaining optimal health and vitality. With regular use, VitalBoost can help to boost your energy levels, support a healthy immune system, and promote overall well-being.',
+]
+
+setInterval(function() {
+    $('#name_button').click(() => {
+        process = true;
+    })
+    if(process && m_id < m.length) {
+        var alex_msg = '<div class="msg"><div class="alex_msg">' + m[m_id] + '</div></div>';
+        if(m_id == 0) {
+            $('.chat').append('<div class="msg"><div class="alex_msg">Hi, ' + $('#name_input').val() + '!</div></div>');
+            m_id++;
+        } else {
+        $('.chat').append(alex_msg);
+        m_id++;
+    }
+    }
+}, 2000)
