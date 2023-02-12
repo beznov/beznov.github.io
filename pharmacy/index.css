@@ -92,6 +92,30 @@ ul, li{
     transition: 3s;
 }
 
+.chat_button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    max-width: 100px;
+    cursor: pointer;
+}
+
+.open_chat_after::after {
+    content: "1";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    width: 25px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    color: #FFFFFF;
+    position: fixed;
+    right: 25px;
+    bottom: 90px;
+}
+
 .arrow_down {
     position: relative;
     max-width: 100px;
@@ -185,7 +209,7 @@ ul, li{
 .chat_window {
     position: fixed;
     right: 20px;
-    bottom: 0px;
+    bottom: -600px;
     background: #FFFFFF;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -195,6 +219,7 @@ ul, li{
     overflow-y: scroll;
     padding-bottom: 60px;
     transition: 2s;
+    z-index: 10;
 }
 
 .chat_window::-webkit-scrollbar {
@@ -288,6 +313,59 @@ ul, li{
 }
 
 #name_button:hover {
+    background: rgb(89, 89, 252);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.chat_img {
+    width: 100%;
+}
+
+.chat_buttons {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    padding-top: 5px;
+}
+
+#yes_button, #no_button {
+    background: none;
+    padding: 15px;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#yes_button {
+    margin-right: 10px;
+}
+
+#yes_button:hover, #no_button:hover {
+    background: rgb(89, 89, 252);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#input_phone {
+    outline: none;
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#submit_button {
+    background: blue;
+    width: 40%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+#submit_button:hover {
     background: rgb(89, 89, 252);
     cursor: pointer;
     transition: 0.3s;

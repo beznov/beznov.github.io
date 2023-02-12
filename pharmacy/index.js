@@ -119,15 +119,32 @@ $('#name_input').keyup(function() {
 })
 
 var process = false;
+var isEnd = false;
 var m_id = 0;
 var m = [
     '',
     'VitalBoost is a comprehensive multi-vitamin supplement designed to support overall health and wellness. Each serving of VitalBoost contains a balanced blend of essential vitamins and minerals, including Vitamin A, C, D, and E, as well as B-Complex vitamins, calcium, and iron.',
     'With its convenient daily serving size and easy-to-swallow tablets, VitalBoost is the perfect addition to your daily routine for maintaining optimal health and vitality. With regular use, VitalBoost can help to boost your energy levels, support a healthy immune system, and promote overall well-being.',
+    'This vitamin looks like this: <img src="img/pill1.jpg" class="chat_img" alt="pill">',
+    'Have you taken these vitamins before?',
+    'I am very glad that you are already familiar with VitalBoost.',
+    'You`re in luck, with Vitalboost your life will be better!',
+    'The last thing we need is your number to contact you. Please write it down below.'
 ]
+
+$('.chat_button').click(() => {
+    $('.chat_window').css('bottom', '0px');
+    $('.open_chat').removeClass('open_chat_after');
+})
+
+$('.chat_exit').click(() => {
+    $('.chat_window').css('bottom', '-600px');
+})
 
 setInterval(function() {
     $('#name_button').click(() => {
+        $('#name_input').hide();
+        $('#name_button').hide();
         process = true;
     })
     if(process && m_id < m.length) {
@@ -137,7 +154,56 @@ setInterval(function() {
             m_id++;
         } else {
         $('.chat').append(alex_msg);
+        $('.msg').last()[0].scrollIntoView({ behavior: 'smooth' });
         m_id++;
+        } if (m_id == 5) {
+            process = false;
+            $('.chat').append('<div class="msg"><div class="my_msg"><div id="answer"><div class="chat_buttons"><input type="button" id="yes_button" value="Yes"><input type="button" id="no_button" value="No"></div></div></div></div>');
+            $('#yes_button').click(function() {
+                $('.chat_buttons').hide();
+                $('#answer').append($(this).val());
+                process = true;
+                m.splice(6, 1);
+            })
+            $('#no_button').click(function() {
+                $('.chat_buttons').hide();
+                $('#answer').append($(this).val());
+                process = true;
+                m.splice(5, 1);
+            })
+        }
+        if(m_id == 7) {
+            $('.chat').append('<input type="text" id="input_phone" name="phone" placeholder="+38012345678" required><input id="submit_button" type="submit" value="Get VitalBoost!" disabled="true">');
+            process = false;
+            $("#input_phone").keyup(function(e) {
+                this.value = this.value.replace(/[^0-9\+]/g, '');
+                var inputValue = $(this).val();
+                var regexp = /^\+380\d{9}$/;
+                if (!regexp.test(inputValue)) {
+                  $('#submit_button').attr('disabled', 'true');
+                } else {
+                    $('#submit_button').removeAttr('disabled');
+                }
+              });
+        }
     }
-    }
-}, 2000)
+}, 3000)
+
+const form = document.getElementById('form');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const data = new FormData(form);
+
+  const name = data.get('name');
+  const phone = data.get('phone');
+  
+  console.log("name: " + name);
+  console.log("phone: " + phone);
+});
+
+function onSubmit(e) {
+    $('#submit_button').val('Wait for the call.');
+    $('#submit_button').attr('disabled', 'true');
+    $('#input_phone').hide();
+    e.preventDefault();
+}

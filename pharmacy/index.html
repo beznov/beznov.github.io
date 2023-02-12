@@ -151,44 +151,26 @@
                     <div class="chat_status">Online</div>
                     <button class="chat_exit">&#10006;</button>
                 </div>
-                <form id="form">
+                <form id="form" onsubmit="onSubmit(event)">
                     <div class="chat">
                         <div class="msg">
                             <div class="alex_msg">
                                 Hi, I want to offer you a free VitalBoost! Please tell me your name.
                             </div>
                         </div>
-                        <input type="text" id="name_input" maxlength="20" required placeholder="Your Name">
+                        <input name="name" type="text" id="name_input" maxlength="20" required placeholder="Your Name">
                         <input type="button" id="name_button" value="Hi!" disabled="true">
                         <div class="msg">
                             <div class="my_msg" id="user_name">
                                 Hi, my name is 
                             </div>
                         </div>
-                        
-
-                    
                     </div>
                 </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
         </div>
         <img class="scroll_button" src="img/arrow.png" alt="arrow">
+        <div class="open_chat open_chat_after">1<img class="chat_button" src="img/chat.png" alt="chat"></div>
         </div>
     </main>
     <footer>
