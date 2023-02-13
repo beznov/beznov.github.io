@@ -394,3 +394,108 @@ ul, li{
     font-weight: 300;
     margin-bottom: 30px;
 }
+
+/*---------------------------------*/
+
+@media(max-width: 1200px) {
+    [class*="__container"] {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 1000px) {
+    [class*="__container"] {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 800px) {
+    [class*="__container"] {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .pill_img {
+        max-width: 400px;
+    }
+}
+
+
+@media(max-width: 600px) {
+    [class*="__container"] {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .chat_window {
+        max-width: 300px;
+        font-size: 14px;
+    }
+
+    .chat_header {
+        width: 300px;
+    }
+
+    .chat_status::before {
+        left: 175px;
+        top: 11px;
+    }
+
+    html, body {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 416px) {
+    [class*="__container"] {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .pill_img {
+        max-width: 250px;
+    }
+
+    .chat_window {
+        max-width: 200px;
+    }
+
+    .chat_header {
+        width: 200px;
+    }
+
+    .chat_status::before {
+        left: 117px;
+        top: 11px;
+    }
+
+    .my_msg {
+        max-width: 100%;
+    }
+
+    .scroll_button {
+        max-width: 70px;
+    }
+
+    .chat_button {
+        max-width: 70px;
+    }
+
+    .open_chat_after::after {
+        right: 20px;
+        bottom: 65px;
+    }
+}
+
+@media(max-width: 300px) {
+    [class*="__container"] {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .pill_img {
+        max-width: 200px;
+    }
+}
