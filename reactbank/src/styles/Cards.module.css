@@ -1,0 +1,310 @@
+.cards_box {
+    display: flex;
+    flex-direction: column;
+}
+
+.card_box {
+    margin-top: 50px;
+    display: flex;
+}
+
+.card_box:not(:first-of-type) {
+    margin-top: 100px;
+}
+
+.card_box:hover .cardbackbl {
+    left: 50px;
+    transition: 1s;
+}
+
+.cardbodybl {
+    z-index: 100;
+}
+
+.cardbodybl, .cardbackbl {
+    width: 360px;
+    height: 210px;
+    background: rgb(42,42,42);
+    background: -moz-linear-gradient(132deg, rgba(42,42,42,1) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(132deg, rgba(42,42,42,1) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(132deg, rgba(42,42,42,1) 0%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2a2a2a",endColorstr="#000000",GradientType=1);
+    border-radius: 20px;
+    padding: 20px;
+    color: #606060;
+    text-shadow: 1px 1px 1px #f3f3f38a;
+    user-select: none;
+}
+
+.cardbackbl {
+    position: relative;
+    left: -250px;
+    text-align: right;
+    transition: 1s;
+}
+
+.cardbackbl span:first-of-type {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: #333333;
+    margin-top: 30px;
+}
+
+.cardbackbl span:last-of-type {
+    font-size: 20px;
+}
+
+.cardlogo {
+    font-family: 'font';
+    font-size: 30px;
+    line-height: 0.5;
+}
+
+.chiparea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.chiparea img:last-of-type {
+    filter: invert(60%);
+    width: 30px;
+}
+
+.chiparea img:first-of-type {
+    width: 50px;
+}
+
+.cardnumber {
+    display: block;
+    width: 100%;
+    font-size: 30px;
+    letter-spacing: 0.96rex;
+}
+
+.cardexpires {
+    font-size: 20px;
+    color: #606060;
+    position: relative;
+    left: 55%;
+}
+
+.cardholder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.cardholder img {
+    width: 50px;
+}
+
+.card a {
+    font-size: 30px;
+    color: #fff;
+    background: rgb(232,123,224);
+    padding: 20px 60px;
+    border-radius: 30px;
+    margin-top: 50px;
+    transition: .3s;
+}
+
+.card a:hover {
+    background: rgb(234, 85, 224);
+    transition: .3s;
+}
+
+.text {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+
+
+
+
+.card_box:hover .cardbackwh {
+    left: 50px;
+    transition: 1s;
+}
+
+.cardbodywh {
+    z-index: 100;
+}
+
+.cardbodywh, .cardbackwh {
+    width: 360px;
+    height: 210px;
+    background: rgb(190, 190, 190);
+    background: -moz-linear-gradient(132deg, rgb(158, 158, 158) 0%, rgb(209, 209, 209) 100%);
+    background: -webkit-linear-gradient(132deg, rgb(158, 158, 158) 0%, rgb(210, 210, 210) 100%);
+    background: linear-gradient(132deg, rgb(158, 158, 158) 0%, rgb(209, 209, 209) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2a2a2a",endColorstr="#000000",GradientType=1);
+    border-radius: 20px;
+    padding: 20px;
+    color: #606060;
+    text-shadow: 1px 1px 1px #f3f3f38a;
+    user-select: none;
+}
+
+.cardbackwh {
+    position: relative;
+    left: -250px;
+    text-align: right;
+    transition: 1s;
+}
+
+.cardbackwh span:first-of-type {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    margin-top: 30px;
+}
+
+.cardbackwh span:last-of-type {
+    font-size: 20px;
+}
+
+
+
+
+.card_box:hover .cardbackir {
+    left: 50px;
+    transition: 1s;
+}
+
+.cardbodyir {
+    z-index: 100;
+}
+
+.cardbodyir, .cardbackir {
+    width: 360px;
+    height: 210px;
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(132deg, rgb(197, 197, 197) 0%, rgb(255, 255, 255) 100%);
+    background: -webkit-linear-gradient(132deg, rgb(190, 190, 190) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(132deg, rgb(186, 186, 186) 0%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2a2a2a",endColorstr="#000000",GradientType=1);
+    border-radius: 20px;
+    padding: 20px;
+    color: #606060;
+    text-shadow: 1px 1px 1px #f3f3f38a;
+    user-select: none;
+}
+
+.cardbackir {
+    position: relative;
+    left: -250px;
+    text-align: right;
+    transition: 1s;
+}
+
+.cardbackir span:first-of-type {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: #333333;
+    margin-top: 30px;
+}
+
+.cardbackir span:last-of-type {
+    font-size: 20px;
+}
+
+
+
+.card_box:hover .cardbackg {
+    left: 50px;
+    transition: 1s;
+}
+
+.cardbodyg {
+    z-index: 100;
+}
+
+.cardbodyg, .cardbackg {
+    width: 360px;
+    height: 210px;
+    background: rgb(255,252,0);
+    background: -moz-linear-gradient(132deg, rgba(255,252,0,1) 0%, rgba(119,129,0,1) 100%);
+    background: -webkit-linear-gradient(132deg, rgba(255,252,0,1) 0%, rgba(119,129,0,1) 100%);
+    background: linear-gradient(132deg, rgba(255,252,0,1) 0%, rgba(119,129,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffc00",endColorstr="#778100",GradientType=1);
+    border-radius: 20px;
+    padding: 20px;
+    color: #606060;
+    text-shadow: 1px 1px 1px #f3f3f38a;
+    user-select: none;
+}
+
+.cardbackg {
+    position: relative;
+    left: -250px;
+    text-align: right;
+    transition: 1s;
+}
+
+.cardbackg span:first-of-type {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: #737373;
+    margin-top: 30px;
+}
+
+.cardbackg span:last-of-type {
+    font-size: 20px;
+}
+
+
+
+
+.card_box:hover .cardbackc {
+    left: 50px;
+    transition: 1s;
+}
+
+.cardbodyc {
+    z-index: 100;
+}
+
+.cardbodyc, .cardbackc {
+    width: 360px;
+    height: 210px;
+    background: rgb(65,255,0);
+    background: -moz-linear-gradient(132deg, rgba(65,255,0,1) 0%, rgba(119,129,0,1) 100%);
+    background: -webkit-linear-gradient(132deg, rgba(65,255,0,1) 0%, rgba(119,129,0,1) 100%);
+    background: linear-gradient(132deg, rgba(65,255,0,1) 0%, rgba(119,129,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#41ff00",endColorstr="#778100",GradientType=1);
+    border-radius: 20px;
+    padding: 20px;
+    color: #606060;
+    text-shadow: 1px 1px 1px #f3f3f38a;
+    user-select: none;
+}
+
+.cardbackc {
+    position: relative;
+    left: -250px;
+    text-align: right;
+    transition: 1s;
+}
+
+.cardbackc span:first-of-type {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: #8d8d8d;
+    margin-top: 30px;
+}
+
+.cardbackc span:last-of-type {
+    font-size: 20px;
+}

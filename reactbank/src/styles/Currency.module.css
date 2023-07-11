@@ -1,0 +1,15 @@
+.currency {
+    width: 100%;
+    background: rgb(232,123,224);
+    background: -moz-linear-gradient(132deg, rgba(232,123,224,0.6979166666666667) 0%, rgba(252,239,251,0) 30%, rgba(255,255,255,0) 70%, rgba(232,123,224,0.6979166666666667) 100%);
+    background: -webkit-linear-gradient(132deg, rgba(232,123,224,0.6979166666666667) 0%, rgba(252,239,251,0) 30%, rgba(255,255,255,0) 70%, rgba(232,123,224,0.6979166666666667) 100%);
+    background: linear-gradient(132deg, rgba(232,123,224,0.6979166666666667) 0%, rgba(252,239,251,0) 30%, rgba(255,255,255,0) 70%, rgba(232,123,224,0.6979166666666667) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e87be0",endColorstr="#e87be0",GradientType=1);
+    text-align: center;
+}
+
+.currency h1 {
+    font-size: 30px;
+    color: #4d4d4d;
+    line-height: 4;
+}
