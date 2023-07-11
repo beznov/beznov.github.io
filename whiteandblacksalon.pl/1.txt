@@ -1,8 +1,0 @@
-parkovka.ua
-arkasza75@gmail.com
-Elzbieta1963
-
-Доступ до панелі управління хостингом:
-URL: https://vhost2-de.parkovka.ua:1500/ispmgr
-Логін: h34533
-Пароль: nAoE7uhrUwb3fl
