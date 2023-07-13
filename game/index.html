@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Игра</title>
+    <style>
+        html, body {
+            background: #000;
+            color: #ffffff;
+            font-size: 30px;
+            line-height: 2;
+        }
+
+        canvas {
+            border: 2px solid #ffffff;
+        }
+
+        .wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="controls">
+            &#8592; вліво <br/>
+            &#8594; вправо <br/>
+            SPACE вогонь
+        </div>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div class="score">
+            <span id="record">Рекорд: 0</span><br/>
+            <span id="current">Рахунок: 0</span><br />
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
